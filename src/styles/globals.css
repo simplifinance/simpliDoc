@@ -1,0 +1,84 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+/* @import url("https://fonts.googleapis.com/css2?family=Nova+Square&display=swap"); */
+
+@import "./animate.css";
+
+@font-face {
+  font-family: "nova-square";
+  src: url("../fonts/NOVASQUARE.TTF");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+* button {
+  transition: all 1s ease-in-out;
+}
+* button:hover {
+  transition: all 1s ease-in-out;
+}
+/* button hover effects */
+
+/* Underline From Center */
+.underlineFromLeft {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+  overflow: hidden;
+}
+.underlineFromLeft:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  right: 100%;
+  bottom: 0;
+  background: #F6F6F6;
+  height: 4px;
+  -webkit-transition-property: right;
+  transition-property: right;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.underlineFromLeft:hover:before,
+.underlineFromLeft:focus:before,
+.underlineFromLeft:active:before {
+  right: 0;
+}
+
+@media all and (min-width: 0px) {
+  .wrapper {
+    width: 91.5%;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+}
+
+@media all and (min-width: 1024px) {
+  .wrapper {
+    width: 91.5%;
+  }
+}
+
+@media all and (min-width: 2000px) {
+  .wrapper {
+    width: 1310px;
+    margin: 0 auto;
+  }
+}

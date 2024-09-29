@@ -1,12 +1,11 @@
-import React from "react";
-import Docs from "../components/pageStructure/docs";
- import { _differnceBetweenDigesuAndOtherDapps } from "../components/pages/DigesuAndDapps/data"
+import React from "react"
+import { _stepsInAFlexPool } from "../components/pages/stepsInAFlexPool/data"
+import Docs from "../components/pageStructure/docs"
 
-const DifferenceBetweenDigesuAndOtherDapps = () => {
- 
+const StepsInAFlexPool = () => {
   return (
     <>
-      {_differnceBetweenDigesuAndOtherDapps.map((pageContent) => (
+      {_stepsInABand.map((pageContent) => (
         <div key={pageContent.id} className="text-white1">
           <Docs
             heading={pageContent.heading}
@@ -14,15 +13,15 @@ const DifferenceBetweenDigesuAndOtherDapps = () => {
             paragraph2={pageContent.paragraph2}
             paragraph3={pageContent.paragraph3}
             paragraph4={pageContent.paragraph4}
-            previous={"About Digesu"}
+            previous={"What Is A Band"}
             nextLink={pageContent.next}
             prevLink={pageContent.previous}
-            next={"What Is A Band?"}
+            next={"Quorum"}
           />
         </div>
       ))}
     </>
   )
 }
- 
-export default DifferenceBetweenDigesuAndOtherDapps;
+
+export default StepsInAFlexPool

@@ -16,7 +16,7 @@ const HowToPayback = () => {
             previous={"How To Get Finance"}
             nextLink={pageContent.next}
             prevLink={pageContent.previous}
-            next={"How To Claim Dues"}
+            next={"How To Withdraw"}
           />
         </div>
       ))}

@@ -2,24 +2,24 @@ import React from "react"
 
 import {
   howToGetFinance,
-  publicVsPrivateBand,
+  permissionedVsPermissionlessPool,
 } from "../../pageStructure/pageLinks"
 
 export const _cycle = [
   {
     id: 0,
-    heading: "CYCLE",
+    heading: "EPOCH CYCLE",
     paragraph1: (
       <p>
-        This is the total period (in days) it takes for every participants in
-        the pool to have GF i.e getFinance. If a band is set up with 3 days
-        duration and the quorum is 3, then the cycle will be 9 days. This is
-        because it will 9 days for the pooled fund to have rotated and fully
-        serve all participants.
+        This is the total period it takes for all participants in
+        a FlexPool to have their turn fulfilled i.e getFinance. If a pool is 
+        set up with 3 hours duration while the quorum is 3, the full cycle will be 9 hours. 
+        This is because it will take at least 9 hours for the pooled fund to fully 
+        serve the participants.
       </p>
     ),
 
-    previous: publicVsPrivateBand,
+    previous: permissionedVsPermissionlessPool,
     next: howToGetFinance,
   },
 ]

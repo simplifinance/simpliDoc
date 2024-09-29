@@ -2,7 +2,7 @@ import NextHead from "next/head"
 import React from "react"
 
 const SEOHead = ({ title, description, url, ogImage }) => {
-  const joinedTitle = title ? `${title} | Quatre Finance` : "Quatre Finance "
+  const joinedTitle = title ? `${title} | Simpli Finance` : "Simpli Finance "
 
   return (
     <NextHead>
@@ -38,7 +38,7 @@ const SEOHead = ({ title, description, url, ogImage }) => {
 SEOHead.defaultProps = {
   title: "",
   description:
-    "Quatre Finance - Enjoy Decentralised Protocols Built On The Blockchain",
+    "Simpli Finance - Enjoy Decentralised Protocols Built On The Blockchain",
   // url: 'https://kingdomofpandaria.com /',
   ogImage: "images/gallery/1.png",
 }

@@ -2,7 +2,7 @@ import React from "react"
 
 import {
   amount,
-  stepsInABand,
+  stepsInAFlexPool,
 } from "../../pageStructure/pageLinks"
 
 export const _quorum = [
@@ -18,7 +18,7 @@ export const _quorum = [
       </p>
     ),
 
-    previous: stepsInABand,
+    previous: stepsInAFlexPool,
     next: amount,
   },
 ]

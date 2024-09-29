@@ -1,6 +1,6 @@
 import React from "react"
 
-import { howToClaimDues, howToGetFinance } from "../../pageStructure/pageLinks"
+import { howToWithdraw, howToGetFinance } from "../../pageStructure/pageLinks"
 
 export const _howToPayback = [
   {
@@ -8,13 +8,13 @@ export const _howToPayback = [
     heading: "HOW TO PAYBACK",
     paragraph1: (
       <p>
-        Payback button will only be active if you have an outstanding debt to
-        repay and you must have getFinance. Ensure you have value sufficient for
-        settling off the d ebt before calling designated function.
+        Payback utility will be activated when users have unpaid loans matched to 
+        their profiles. An amount not lesser than the given loan must be approved
+        as spending cap to the Factory contract.
       </p>
     ),
 
     previous: howToGetFinance,
-    next: howToClaimDues,
+    next: howToWithdraw,
   },
 ]

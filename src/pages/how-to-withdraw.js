@@ -1,11 +1,11 @@
 import React from "react"
-import { _claimDues } from "../components/pages/howToClaimDues/data"
+import { _withdraw } from "../components/pages/howToWithdraw/data"
 import Docs from "../components/pageStructure/docs"
 
-const HowToClaimDues = () => {
+const HowToWithdraw = () => {
   return (
     <>
-      {_claimDues.map((pageContent) => (
+      {_withdraw.map((pageContent) => (
         <div key={pageContent.id} className="text-white1">
           <Docs
             heading={pageContent.heading}
@@ -24,4 +24,4 @@ const HowToClaimDues = () => {
   )
 }
 
-export default HowToClaimDues
+export default HowToWithdraw

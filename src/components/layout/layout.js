@@ -2,12 +2,12 @@
 import NavBar from "./navbar/navbar"
 import Footer from "./footer"
 import { useEffect, useState } from "react"
-import ScrollButton from "./scrollButton"
+// import ScrollButton from "./scrollButton"
 import Spinner from "../spinner"
 import React from "react"
 import TransparenLayer from "../transparentLayer"
 import SideBar from "../sidebar/sidebar"
-import Socials from "../socials"
+// import Socials from "../socials"
 // Navbar and Footer Component
 
 const Layout = ({ handleClick, isClicked, children }) => {

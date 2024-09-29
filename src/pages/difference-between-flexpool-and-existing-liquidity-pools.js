@@ -1,10 +1,12 @@
 import React from "react";
-import { _aboutDigesu } from "../components/pages/aboutDigesu/data";
 import Docs from "../components/pageStructure/docs";
-const AboutDigesu = () => {
+ import { _differnceBetweenFlexPoolAndExistingLiquidityPools } from "../components/pages/flexPoolAndExistingPools/data"
+
+const DifferenceBetweenFlexPoolAndExistingLiquidityPools = () => {
+ 
   return (
     <>
-      {_aboutDigesu.map((pageContent) => (
+      {_differnceBetweenFlexPoolAndExistingLiquidityPools.map((pageContent) => (
         <div key={pageContent.id} className="text-white1">
           <Docs
             heading={pageContent.heading}
@@ -12,10 +14,10 @@ const AboutDigesu = () => {
             paragraph2={pageContent.paragraph2}
             paragraph3={pageContent.paragraph3}
             paragraph4={pageContent.paragraph4}
-            next={"Digesu & Other Apps"}
+            previous={"About FlexPool"}
             nextLink={pageContent.next}
             prevLink={pageContent.previous}
-            previous={"What Is A Digesu?"}
+            next={"What Is A FlexPool?"}
           />
         </div>
       ))}
@@ -23,4 +25,4 @@ const AboutDigesu = () => {
   )
 }
  
-export default AboutDigesu;
+export default DifferenceBetweenFlexPoolAndExistingLiquidityPools;

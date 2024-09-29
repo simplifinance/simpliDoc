@@ -2,18 +2,17 @@ import React from "react"
 
 import {
   quorum,
-  whatIsABand,
+  whatIsAFlexPool,
 } from "../../pageStructure/pageLinks"
 
-export const _stepsInABand = [
+export const _stepsInAFlexPool = [
   {
     id: 0,
-    heading: "STEPS IN A BAND",
+    heading: "STEPS IN A FLEXPOOL",
     paragraph1: (
       <p>
-        Launching a band requires a minimal amount of fee usually denominated in
-        network currency e.g BNB. When a band is created, it is initialized with
-        the value sent along by the creator.
+        To create a FlexPool, user need to have some text XFI to pay for transaction fee.
+        Visit the <a href="https://test.xficonsole.com" target="_blank">faucet</a> to request for test coin
       </p>
     ),
     paragraph2: (
@@ -27,7 +26,7 @@ export const _stepsInABand = [
       </p>
     ),
     paragraph3: <p>See next section on how liquidation works.</p>,
-    previous: whatIsABand,
+    previous: whatIsAFlexPool,
     next: quorum
   },
 ]

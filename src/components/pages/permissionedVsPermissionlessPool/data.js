@@ -2,7 +2,7 @@ import React from "react"
 
 import { cycle, liquidation } from "../../pageStructure/pageLinks"
 
-export const _publicVsPrivateBand = [
+export const _permissionedVsPermissionlessPool = [
   {
     id: 0,
     heading: "PUBLIC VS PRIVATE BANDS",

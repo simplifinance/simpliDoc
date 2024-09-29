@@ -8,10 +8,12 @@ export const _howToGetFinance = [
     heading: "HOW TO GET FINANCE",
     paragraph1: (
       <p>
-        Getting finance is treated in first-in-first-out (FIFO) basis ie if your
-        position is 1, you will be the first to getFinance and so on. To see
-        your position and other information relation to each band, click on the
-        ID of any oof the bands and the profile will be displayed.
+        Getting finance is treated in a first-in-first-out (FIFO) basis. When a 
+        user provide liquidity in a FlexPool, they're assigned a unique slot in 
+        a progressive manner. When is its your turn to borrow as a member in a 
+        FlexPool, you only need to call at the right time (often with 1hr grace period)
+        otherwise another participant may claim your slot. Slots are claimable when 
+        the grace period elapsed.                          
       </p>
     ),
 

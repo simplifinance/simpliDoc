@@ -1,105 +1,105 @@
 import React from "react"
 import {
-  aboutDigesu,
+  aboutFlexPool,
   amount,
   cycle,
-  differenceBetweenDigesuAndOtherDapps,
+  differenceBetweenFlexPoolAndExistingLiquidityPools,
   duration,
-  howToClaimDues,
+  howToWithdraw,
   howToGetFinance,
   howToPayback,
   liquidation,
   multiplier,
-  publicVsPrivateBand,
+  permissionedVsPermissionlessPool,
   quorum,
-  stepsInABand,
+  stepsInAFlexPool,
   testnetInfo,
-  whatIsABand,
+  whatIsAFlexPool,
 } from "../pageStructure/pageLinks"
 
 export const sidebarList = [
   {
     id: 0,
-    navList: "What is a Digesu?",
+    navList: "What are FlexPools?",
     href: "/",
   },
   {
     id: 1,
-    navList: "About Digesu",
-    href: aboutDigesu,
+    navList: "About FlexPool",
+    href: aboutFlexPool,
   },
   {
     id: 2,
     navList: (
       <p>
-        Difference between <br /> Digesu & other apps
+        Difference between <br /> FlexPool & other Liquidity Pools
       </p>
     ),
-    href: differenceBetweenDigesuAndOtherDapps,
+    href: differenceBetweenFlexPoolAndExistingLiquidityPools,
   },
+  // {
+  //   id: 3,
+  //   navList: "What is a FlexPool?",
+  //   href: whatIsAFlexPool,
+  // },
   {
     id: 3,
-    navList: "What is a Band?",
-    href: whatIsABand,
+    navList: "Steps in a FlexPool",
+    href: stepsInAFlexPool,
   },
   {
     id: 4,
-    navList: "Steps in a Band",
-    href: stepsInABand,
-  },
-  {
-    id: 5,
     navList: "Quorum",
     href: quorum,
   },
   {
-    id: 6,
+    id: 5,
     navList: "Amount",
     href: amount,
   },
   {
-    id: 7,
+    id: 6,
     navList: "Duration",
     href: duration,
   },
   {
-    id: 8,
+    id: 7,
     navList: "Multiplier",
     href: multiplier,
   },
   {
-    id: 9,
+    id: 8,
     navList: "Liquidation",
     href: liquidation,
   },
   {
-    id: 10,
-    navList: "Public VS Private Band",
-    href: publicVsPrivateBand,
+    id: 9,
+    navList: "Permissioned Vs Permissionless Pool",
+    href: permissionedVsPermissionlessPool,
   },
   {
-    id: 11,
+    id: 10,
     navList: "Cycle",
     href: cycle,
   },
   {
-    id: 12,
+    id: 11,
     navList: "How to Get Finance",
     href: howToGetFinance,
   },
   {
-    id: 13,
+    id: 12,
     navList: "How to Payback",
     href: howToPayback,
   },
   {
-    id: 14,
-    navList: "How to Claim dues",
-    href: howToClaimDues,
+    id: 13,
+    navList: "How to withdraw",
+    href: howToWithdraw,
   },
   {
-    id: 16,
-    navList: "Testnet Info",
+    id: 14,
+    navList: "Network Info",
     href: testnetInfo,
   },
 ]

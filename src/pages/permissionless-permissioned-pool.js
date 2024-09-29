@@ -1,11 +1,12 @@
 import React from "react"
-import { _publicVsPrivateBand } from "../components/pages/publicVsPrivateBand/data"
+import { _permissionedVsPermissionlessPool } from "../components/pages/permiss_permissionedVsPermissionlessPool/data"
 import Docs from "../components/pageStructure/docs"
+import { _permissionedVsPermissionlessPool } from "../components/pages/permissionedVsPermissionlessPool/data"
 
-const PublicVsPrivateBand = () => {
+const PermisssionlessAndPermissioned = () => {
   return (
     <>
-      {_publicVsPrivateBand.map((pageContent) => (
+      {_permissionedVsPermissionlessPool.map((pageContent) => (
         <div key={pageContent.id} className="text-white1">
           <Docs
             heading={pageContent.heading}
@@ -24,4 +25,4 @@ const PublicVsPrivateBand = () => {
   )
 }
 
-export default PublicVsPrivateBand
+export default PermisssionlessAndPermissioned

@@ -13,10 +13,10 @@ const Cycle = () => {
             paragraph2={pageContent.paragraph2}
             paragraph3={pageContent.paragraph3}
             paragraph4={pageContent.paragraph4}
-            previous={"Public VS Private Band"}
+            previous={"Permissionless VS Permissioned Pool"}
             nextLink={pageContent.next}
             prevLink={pageContent.previous}
-            next={"How To Get Finance"}
+            next={"How To Get Finance/Borrow"}
           />
         </div>
       ))}

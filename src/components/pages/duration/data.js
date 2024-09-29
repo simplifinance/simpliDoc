@@ -8,9 +8,9 @@ export const _duration = [
     heading: "DURATION",
     paragraph1: (
       <p>
-        Duration specifies the period of the use of the fund. If a pool &apos;Y&apos; with
+        Duration is the period the loan will be used. If a pool &apos;Y&apos; with
         quorum: &apos;3&apos; was set up with 7 hours duration, each taker will
-        have 7 days to use the given/borrowed fund and return it to the pool. An
+        have 7 hours to use the given/borrowed fund and return it to the pool. An
         epoch for this pool will be 21 hours.
       </p>
     ),

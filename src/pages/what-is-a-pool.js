@@ -1,11 +1,11 @@
 import React from "react"
-import { _stepsInABand } from "../components/pages/stepsInABand/data"
+import { _whatIsAFlexPool } from "../components/pages/whatIsAFlexPool/data"
 import Docs from "../components/pageStructure/docs"
 
-const StepsInABand = () => {
+const WhatIsAFlexPool = () => {
   return (
     <>
-      {_stepsInABand.map((pageContent) => (
+      {_whatIsAFlexPool.map((pageContent) => (
         <div key={pageContent.id} className="text-white1">
           <Docs
             heading={pageContent.heading}
@@ -13,10 +13,10 @@ const StepsInABand = () => {
             paragraph2={pageContent.paragraph2}
             paragraph3={pageContent.paragraph3}
             paragraph4={pageContent.paragraph4}
-            previous={"What Is A Band"}
+            previous={"Digesu & Other Apps"}
             nextLink={pageContent.next}
             prevLink={pageContent.previous}
-            next={"Quorum"}
+            next={"Steps In A Band"}
           />
         </div>
       ))}
@@ -24,4 +24,4 @@ const StepsInABand = () => {
   )
 }
 
-export default StepsInABand
+export default WhatIsAFlexPool

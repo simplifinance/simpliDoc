@@ -19,16 +19,11 @@ const SEOHead = ({ title, description, url, ogImage }) => {
       <meta property="og:url" content={url} />
       <meta property="og:title" content={joinedTitle} />
       <meta property="og:description" content={description} />
-      {/* <meta name="twitter:card" content="summary_large_image" /> */}
-      {/* <meta name="twitter:creator" content="@kopandaria" /> */}
-      {/* <meta name="twitter:site" content="@kopandaria" /> */}
-      {/* <meta name="twitter:image" content={ogImage} /> */}
-      {/* <meta name="twitter:image:alt" content={description} /> */}
       <meta name="twitter:description" content={description} />
       <meta property="og:image" content={ogImage} />
       <meta property="og:image:width" content="1200" />
       <meta property="og:image:height" content="630" />
-      <link rel="icon" href="/favicon.ico" />
+      <link rel="icon" href="/favicon" />
       <meta name="msapplication-TileColor" content="#F9F4F4" />
       <meta name="theme-color" content="#F87C00" />
     </NextHead>
@@ -39,7 +34,6 @@ SEOHead.defaultProps = {
   title: "",
   description:
     "Simpli Finance - Enjoy Decentralised Protocols Built On The Blockchain",
-  // url: 'https://kingdomofpandaria.com /',
   ogImage: "images/gallery/1.png",
 }
 

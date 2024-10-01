@@ -11,10 +11,11 @@ export const _quorum = [
     heading: "QUORUM",
     paragraph1: (
       <p>
-        The required number of participants that should occupy a specific band.
-        Example: If Alice creates a band with 'Quorum' as 3, on creation, Alice
-        is the first on the list. Two more people is needed to mark the group as
-        'Closed'. Note: It must always be greater than 1 and less than 256.
+       The mumber of participants allowed in a pool. It is explicit 
+       and is required when user wants to create a permissionless pool. 
+       If permissioned, the quorum is the length of supplied participating 
+       addresses. The minimum number of participants in a FlexPool is 2 
+       and maximum is 255.
       </p>
     ),
 

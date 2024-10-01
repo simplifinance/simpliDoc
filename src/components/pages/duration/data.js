@@ -8,10 +8,12 @@ export const _duration = [
     heading: "DURATION",
     paragraph1: (
       <p>
-        Duration is the period the loan will be used. If a pool &apos;Y&apos; with
-        quorum: &apos;3&apos; was set up with 7 hours duration, each taker will
-        have 7 hours to use the given/borrowed fund and return it to the pool. An
-        epoch for this pool will be 21 hours.
+        The length of time that the loan is due for repayment which determines the 
+        length of an epoch. This periods are often short and are specified in hours. 
+        While &apos;Duration&apos; is set for an epoch, users may specify their choice when 
+        they want to GetFinance, and will be considered first. Borrower's choice 
+        must not be greater than the epoch's.  Maximum epoch duration is currently 
+        pegged at 30 days equivalent to &apos;720 hrs&apos;, and may be expanded in the future. 
       </p>
     ),
 

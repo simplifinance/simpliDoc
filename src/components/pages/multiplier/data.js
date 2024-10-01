@@ -8,16 +8,16 @@ export const _multiplier = [
     heading: "MULTIPLIER",
     paragraph1: (
       <p>
-        A band with 1.5x multiplier requires the current GF&apos;er to deposit
-        collateral in a function of 1.5 time the pooled amount i.e If multiplier
-        is 1, then collateral is not needed.
+        Collateral factor/coverage is usually determined by the creator of 
+        FlexPool at the point of creation. This is the percentage of loan 
+        that is secure by discounted by the value of XFI. 
       </p>
     ),
     paragraph2: (
       <p>
-        Example: Assume Unit amount = 1 ETH, quorum = 3 and multiplier = 1.5,
-        collateral value will be 1ETH * 3 * 1.5 = 4.5ETH. Collateral are
-        denominated in QFT or stableCoin.
+        If a FlexPool has 100 &apos;USDT&apos; as the loan base while collateral factor 
+        is 150. If the price of XFI at borrow point is &apos;$0.5 USDT&apos; the required
+        collateral in XFI will be calculated as <strong>collateralNeeded = ((100/0.5) * 150) / 100</strong>
       </p>
     ),
 
